@@ -12,15 +12,15 @@
 // @connect      passportapi.115.com
 // @connect      proapi.115.com
 // @connect      uplb.115.com
-// @require      https://cdn.bootcss.com/crc-32/1.2.0/crc32.min.js
-// @require      https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js
-// @require      https://cdn.bootcss.com/aes-js/3.1.0/index.min.js
-// @require      https://raw.github.com/kkHAIKE/node-lz4/balabala/build/lz4.min.js
-// @require      https://raw.github.com/indutny/elliptic/master/dist/elliptic.min.js
-// @require      https://raw.github.com/emn178/js-md4/master/build/md4.min.js
-// @require      https://raw.github.com/kkHAIKE/fake115/master/fec115.min.js
+// @require      https://cdn.bootcss.com/crc-32/1.2.0/crc32.js
+// @require      https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js
+// @require      https://cdn.bootcss.com/aes-js/3.1.0/index.js
+// @require      https://raw.github.com/kkHAIKE/node-lz4/balabala/build/lz4.js
+// @require      https://raw.github.com/indutny/elliptic/master/dist/elliptic.js
+// @require      https://github.com/emn178/js-md4/raw/master/src/md4.js
+// @require      https://raw.github.com/kkHAIKE/fake115/master/fec115.js
 // @require      https://cdn.bootcss.com/jsSHA/2.3.1/sha1.js
-// @require      https://raw.github.com/pierrec/js-xxhash/master/build/xxhash.min.js
+// @require      https://raw.github.com/pierrec/js-xxhash/master/build/xxhash.js
 // @run-at       document-start
 // ==/UserScript==
 (function() {
