@@ -18,7 +18,8 @@
 (function() {
     'use strict';
 $("#js-login_box").append("<button>test data str and bin false</button>").on("click", function(){
-GM_xmlhttpRequest({
+GM_xmlhttpRequest(
+    {
     method: 'POST',
     url: "http://passport.115.com/?ct=encrypt&ac=login&k_ec=",
     data: "a1b2",
@@ -26,7 +27,9 @@ GM_xmlhttpRequest({
     responseType: 'arraybuffer',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
-    },});
+    }
+    }
+);
 });
     
     $("#js-login_box").append("<button>test data str and bin true</button>").on("click", function(){
@@ -38,7 +41,8 @@ GM_xmlhttpRequest({
     responseType: 'arraybuffer',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
-    },});
+    }
+});
 });
 
     $("#js-login_box").append("<button>test data blob and bin true</button>").on("click", function(){
@@ -50,6 +54,7 @@ GM_xmlhttpRequest({
     responseType: 'arraybuffer',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
-    },});
+    }
+});
 });
 })()
