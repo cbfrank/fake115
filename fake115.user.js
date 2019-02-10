@@ -301,12 +301,13 @@ LoginEncrypt_ = function(arg, g, arg1, sig) {
     signew: 1,
     sign115: sig_calc(sig, md5("" + account + tm))
   }), key);
+    var sendData = GM_info.scriptHandler === 'Violentmonkey' ? new Blob([data.buffer], {
+      type: 'application/octet-binary'
+    }) : data.toString('latin1');
   return GM_xmlhttpRequest({
     method: 'POST',
     url: "http://passport.115.com/?ct=encrypt&ac=login&k_ec=" + token,
-    data: GM_info.scriptHandler === 'Violentmonkey' ? new Blob([data.buffer], {
-      type: 'application/octet-binary'
-    }) : data.toString('latin1'),
+    data: sendData,
     binary: true,
     responseType: 'arraybuffer',
     headers: {
